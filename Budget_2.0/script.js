@@ -1,4 +1,7 @@
-var SetBudget = ""
+const expensesArray = {
+    amount: []
+    value: []
+}
 
 function updateSetBudget()
 {
@@ -6,6 +9,14 @@ function updateSetBudget()
   document.getElementById("Set").innerHTML = x;
 }
 
+function update_expensesArray()
+{
+    var x = document.getElementById("expense_description").value;
+  var y = document.getElementById("expense_amount").value;
+  expensesArray.push(x , y)
+}
+
+console.log(expensesArray);
 
 
 
