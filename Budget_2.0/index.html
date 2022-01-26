@@ -23,7 +23,7 @@
                     <label for="Initial_Budget">Set your Budget</label><br>
                     <input id="Budget-input" class="form-control Budget-input"
                     placeholder="initial budget" type="number" value="" >
-                    <input type="submit" class="budget_submit" id="budget">
+                    <input type="submit" onclick="updateSetBudget()" class="budget_submit" id="budget">
                 </form>
             
             </div>
@@ -48,7 +48,7 @@
             <th>Budget Left</th>
         </tr>
         <tr>
-            <th>2000</th>
+            <th id="Set"></th>
             <th>200</th>
             <th>1800</th>
         </tr>

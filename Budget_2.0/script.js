@@ -1,3 +1,11 @@
+var SetBudget = ""
+
+function updateSetBudget()
+{
+    var x = document.getElementById("Budget-input").value;
+  document.getElementById("Set").innerHTML = x;
+}
+
 
 
 
