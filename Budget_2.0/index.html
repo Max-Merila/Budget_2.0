@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Budget app</title>
     <link rel="stylesheet" href="styles.css">
-    <script type="text/javascript" src= "script.js"></script>
+    
 
 </head>
 <body>
@@ -21,9 +21,9 @@
 
                 <form id=Budget-form class="Budget-form">
                     <label for="Initial_Budget">Set your Budget</label><br>
-                    <input id="Budget-input" class="form-control Budget-input"
-                    placeholder="initial budget" type="number" value="" >
-                    <input type="submit" onclick="updateSetBudget()" class="budget_submit" id="budget">
+                    <input id="Budget_input" class="form-control Budget-input"
+                    placeholder="initial budget" type="number" value="0" >
+                    <input type="submit" onsubmit="updateSetBudget()" class="budget_submit" id="budgetBtn">
                 </form>
             
             </div>
@@ -72,6 +72,7 @@
 
 
     </table>
+    <script type="text/javascript" src= "script.js"></script>
 </body>
 </html>
 

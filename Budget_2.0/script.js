@@ -1,13 +1,21 @@
-const expensesArray = {
-    amount: []
-    value: []
-}
+const budgetInput = document.getElementById("Budget_input");
+const SetBudget = document.getElementById("Set");
+const budgetBtn = document.getElementById("budgetBtn");
 
-function updateSetBudget()
+// console.log(budgetInput);
+
+budgetBtn.onclick = function updateSetBudget()
 {
-    var x = document.getElementById("Budget-input").value;
-  document.getElementById("Set").innerHTML = x;
+    const x = document.getElementById("Budget_input").value;
+    alert(x);
+    let Budget = "$" + x;
+    SetBudget.innerHTML = Budget;
+//     var x = document.getElementById("Budget-input").value;
+//   document.getElementById("Set").innerHTML += x;
 }
+//create onclick event??
+//that is already in the html I thought.
+
 
 function update_expensesArray()
 {
@@ -16,7 +24,7 @@ function update_expensesArray()
   expensesArray.push(x , y)
 }
 
-console.log(expensesArray);
+// console.log(expensesArray);
 
 
 
